@@ -156,62 +156,6 @@
                 <li class="like1">666666</li>
             </ul>
 
-
-            <div id="start">
-                <div>
-                    <div class="playing1" :class="{playing:isPlay}">
-                        <img src="player_bar.png" class="play_bar" />
-                        <!-- 黑胶碟片 -->
-                        <img src="disc.png" class="disc autoRotate" />
-                        <img :src="coverUrl==''?'./cover.png':coverUrl" class="cover autoRotate" />
-                      </div>   
-                </div>
-                <div class="playing2" ref='comment_wrapper'>
-                    <h5 class='title'>热门留言</h5>
-                    <div class='comment_list'>
-            
-                      <dl v-for="item in hotComments">
-                        <dt>
-                          <img :src="item.user.avatarUrl" alt="" />
-                        </dt>
-                        <dd class="name">{{item.user.nickname}}</dd>
-                        <dd class="detail">
-                          {{item.content}}
-                        </dd>
-                      </dl>
-                    </div>
-                  </div>
-            </div>
-
-
-
-
-
-          <!-- 歌曲详情 -->
-          <div id="start">
-              <div class="playing1">
-                  <img src="./player_bar.png">
-                  <img src="./disc.png"> 
-              </div>
-              <div class="playing2">
-                  <h4>评论</h4>
-                  <div>
-                      <dl>
-                          <dt></dt>
-                          <dd></dd>
-                      </dl>
-                  </div>
-              </div>
-              <div class="audio">
-                <audio ref='audio' @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="myaudio"></audio>
-              </div>
-          </div>
-
-
-
-
-
-
             <!-- 分割线 -->
             <div class="cut"></div>
         </div>

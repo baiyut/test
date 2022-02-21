@@ -166,9 +166,9 @@ li:hover{
     position: absolute;
     width: 1px; 
     background-color: rgb(225,225,225);
-    height: 10000000px;
+    height: 900px;
     left: 200px;
-    top: -10000px;
+    top: -10px;
 }
 .bottom{
     position: fixed;
